@@ -1,0 +1,30 @@
+ul {
+  list-style-type: none; /* noktaları kaldırır */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  background-color: #333;
+}
+
+.anasayfa-menu {
+  float: left; /* yan yana çıkması için */
+}
+
+.anasayfa-menu a {
+  display: block; /* sadece yazının değil dolguların da tıkllanabilir olmasını sağlar */
+  color: white;
+  text-align: center; /* texti ortalar */
+  padding: 14px 16px;
+  text-decoration: none; /* alt çizgiyi kaldırmak için */
+}
+li a:hover {
+  background-color: #111;
+}
+
+.anasayfa{ /* anasayfa divi */
+  
+}
+
+.anasayfa-bolum1{
+  background-color: aqua;
+}
