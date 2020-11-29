@@ -50,3 +50,7 @@ li a:hover {
 .anasayfa_bolum2_haberler {
     background-color: darkgray;
 }
+
+.news_img {
+    height: 250px;
+}

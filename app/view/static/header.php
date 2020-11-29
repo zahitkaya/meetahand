@@ -38,7 +38,40 @@
 
         </div><!-- anasayfa_bolum1 divi sonu -->
         <div class="anasayfa_bolum2">
-            <div class="anasayfa_bolum2_haberler" align=center> Buraya haber API'dan çektiğimiz haberleri gireceğiz.</div>
+            <div class="anasayfa_bolum2_haberler" align=center> 
+            <?php
+            $api='http://newsapi.org/v2/everything?q=turkey&from=2020-10-29&sortBy=publishedAt&apiKey=26fe010fe2da4bb493a5b284eec3028b';
+            $response=file_get_contents($api);
+            $NewsData=json_decode(($response));
+            foreach($NewsData-> articles as $News){
+                ?>
+                
+                <h2>haber</h2>
+                <img src="<?php echo $News->urlToImage; ?>" alt="" class="img_news">
+                <h3><?php echo $News->title; ?></h3>
+                <p><?php echo $News->description; ?></p>
+                <p><?php echo $News->content; ?></p>
+                <p><?php echo $News->publishedAt; ?></p>
+
+
+<!--
+                echo $News->urlToImage;
+                echo $News->title;
+                echo $News->description;
+                echo $News->content;
+                echo $News->author;
+                echo $News->publishedAt;
+                */
+                -->
+
+            
+        <?php }?>
+            
+            
+            
+            
+            
+            Buraya haber API'dan çektiğimiz haberleri gireceğiz.</div>
         </div><!-- anasayfa_bolum2 divi sonu -->
     </div> <!-- anasayfa divi sonu -->
     <!-- shift+alt+f -->
