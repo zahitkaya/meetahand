@@ -42,3 +42,11 @@ li a:hover {
 .anasayfa_edittext {}
 
 .soru_textarea {}
+
+.anasayfa_bolum2 {
+    margin-top: 1%;
+}
+
+.anasayfa_bolum2_haberler {
+    background-color: darkgray;
+}
