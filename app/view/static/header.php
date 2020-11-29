@@ -19,7 +19,7 @@
     <div class="anasayfa" style='<?php if ($_SERVER['REQUEST_URI'] <> "/meetahand/") echo "display:none" ?>'>
         <!-- eğer current url /meetahand/ değilse gösterme -->
         <div class="anasayfa_bolum1">
-            <div class="anasayfa_bolum1_icerik" >
+            <div class="anasayfa_bolum1_icerik">
                 <div class="anasayfa_bolum1_icerik_bilgi" align="center">
                     <p> meetahand.com</p>
                     <p>Öğrencilerin dostu</p>
