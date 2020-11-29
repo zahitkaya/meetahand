@@ -8,8 +8,6 @@ require 'app/init.php';
 require 'app/view/static/header.php';
 
 
-
-
 $_url=get('url');
 $_url=array_filter(explode('/',$_url));
 

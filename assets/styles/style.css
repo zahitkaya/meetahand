@@ -6,11 +6,11 @@ ul {
   background-color: #333;
 }
 
-.anasayfa-menu {
+.anasayfa_menu {
   float: left; /* yan yana çıkması için */
 }
 
-.anasayfa-menu a {
+.anasayfa_menu a {
   display: block; /* sadece yazının değil dolguların da tıkllanabilir olmasını sağlar */
   color: white;
   text-align: center; /* texti ortalar */
@@ -22,9 +22,24 @@ li a:hover {
 }
 
 .anasayfa{ /* anasayfa divi */
+
   
 }
 
-.anasayfa-bolum1{
+.anasayfa_bolum1{
   background-color: aqua;
+
+}
+.anasayfa_bolum1_icerik{
+  
+}
+.anasayfa_bolum1_icerik_textarea{
+
+  
+}
+.anasayfa_edittext{
+  
+}
+.soru_textarea{
+  
 }
