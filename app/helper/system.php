@@ -8,5 +8,5 @@ function controller($name){
     return controller.'/'.$name.'.php'; 
 }
 
-
+ 
 ?>

@@ -12,7 +12,7 @@ spl_autoload_register(function ($class) {
 });
 
 try {
-    $db = new PDO('mysql:host=localhost;dbname=ders1', 'root', '12345678'); //Veritabanı şifresini burda yazıyoruz. 
+    $db = new PDO('mysql:host=localhost;dbname=dersler', 'root', '12345678'); //Veritabanı şifresini burda yazıyoruz. 
 } catch (PDOException $e) {
     echo $e->getMessage();
 }

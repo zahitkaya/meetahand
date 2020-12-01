@@ -40,7 +40,7 @@
         <div class="anasayfa_bolum2">
             <div class="anasayfa_bolum2_haberler" align=center> 
             <?php
-            $api='http://newsapi.org/v2/everything?q=turkey&from=2020-10-29&sortBy=publishedAt&apiKey=26fe010fe2da4bb493a5b284eec3028b';
+            $api='http://newsapi.org/v2/everything?q=bitcoin&from=2020-10-30&sortBy=publishedAt&apiKey=26fe010fe2da4bb493a5b284eec3028b';
             $response=file_get_contents($api);
             $NewsData=json_decode(($response));
             foreach($NewsData-> articles as $News){
