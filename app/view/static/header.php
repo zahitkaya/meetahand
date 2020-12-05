@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <a href="index.php"><img src="<?php echo asset_url('images/Meetahandlogo.jpg'); ?>" alt="logo" height="155px" align="left" /></a>
+    <a href="<?php echo url  ?>"><img src="<?php echo asset_url('images/Meetahandlogo.jpg'); ?>" alt="logo" height="155px" align="left" /></a>
     <!-- Arka plan resmi -->
 
     <ul class="menu">
@@ -39,7 +39,7 @@
             <a href="#"> Appointment</a>
         </li>
         <li>
-            <a href="konu"> Lecture Notes <i class="arrow down"></i></a>
+            <a href="<?php echo url ?>/konu"> Lecture Notes <i class="arrow down"></i></a>
             <ul>
                 <li>
                     <a href="#"> Mechatronics Engineering </a>
@@ -52,8 +52,9 @@
                 </li>
                 
                 <?php foreach ($bolum_ad as $key => $value) {
-                    echo '<li><a href=#>';
+                    echo '<li><a href='.url.'/konu/'.$key.'>';
                     echo $value;
+                   
                 }
                 echo '</a></li>'; ?>
             </ul>
