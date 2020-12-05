@@ -38,8 +38,10 @@
     background-color: #f7f1e3;
 }
 
-.news_img {
-    height: 250px;
+.img_news {
+    margin: auto;
+    padding: 2%;
+    width: 700px;
 }
 
 

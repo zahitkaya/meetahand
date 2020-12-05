@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<a href="index.php"><img src="<?php echo asset_url('images/Meetahandlogo.jpg'); ?>" alt="logo" height="155px" align="left"/></a>
+    <a href="index.php"><img src="<?php echo asset_url('images/Meetahandlogo.jpg'); ?>" alt="logo" height="155px" align="left" /></a>
     <!-- Arka plan resmi -->
 
     <ul class="menu">
@@ -50,6 +50,12 @@
                 <li>
                     <a href="#"> Computer Engineering </a>
                 </li>
+                
+                <?php foreach ($bolum_ad as $key => $value) {
+                    echo '<li><a href=#>';
+                    echo $value;
+                }
+                echo '</a></li>'; ?>
             </ul>
         </li>
 
@@ -58,18 +64,18 @@
         </li>
     </ul>
     <div id="info" class="sidenav">
-  <a href="#" id="mission">Mission</a>
-  <a href="#" id="Content">Content</a>
-  <a href="#" id="projects">Projects</a>
-  <a href="#" id="contact">Contact</a>
-</div> 
+        <a href="#" id="mission">Mission</a>
+        <a href="#" id="Content">Content</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+    </div>
 
     <div class="anasayfa" style='<?php if ($_SERVER['REQUEST_URI'] <> "/meetahand/") echo "display:none" ?>'>
         <!-- eğer current url /meetahand/ değilse gösterme -->
-       
+
         <div class="anasayfa_bolum1">
             <div class="anasayfa_bolum1_icerik" align="center">
-              <!--  <div class="anasayfa_bolum1_icerik_bilgi">
+                <!--  <div class="anasayfa_bolum1_icerik_bilgi">
                     <p> meetahand.com</p>
                     <p>Öğrencilerin dostu</p>
                     <a href="#">Hakkımızda</a>
@@ -85,7 +91,7 @@
 
             </div><!-- anasayfa_bolum1_icerik divi sonu -->
 
-        </div> <!-- anasayfa_bolum1 divi sonu --> 
+        </div> <!-- anasayfa_bolum1 divi sonu -->
         <div class="anasayfa_bolum2">
             <div class="anasayfa_bolum2_haberler" align=center>
                 <?php
